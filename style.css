@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body
+{
+    background: #000;
+    margin: 0;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+.bg-image
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.2;
+    background-image: url('https://images.pexels.com/photos/753994/pexels-photo-753994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+}
+.container
+{
+    margin-left: -200px;
+    margin-top: -80px;
+}
+.icon
+{
+    color: #8c00ffc4;
+}
+.input-holder
+{
+    padding-top: 50px;
+}
+.input
+{
+    caret-color: #fffffff0;
+    color: #fffffff0;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 0.5px solid #fffffff0;
+    width: 100%;
+    padding-bottom: 8px;
+}
+.input:focus
+{
+    border-bottom: 0.5px solid rgb(162, 0, 255);
+}
+.bt
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.bt a {
+    margin: 0;
+    background: transparent;
+    border-radius: 20px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0px 100px;
+    letter-spacing: 8px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 130%;
+    border: 2px solid #051c2e;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.bt a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #6500a8;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    -webkit-box-shadow: 0 0 10px #6500a8, 0 0 40px #6500a8, 0 0 80px #6500a8;
+            box-shadow: 0 0 10px #6500a8, 0 0 40px #6500a8, 0 0 80px #6500a8; }
+      .bt a:hover::before {
+    height: 100%; }
+        .bt a:hover {
+      -webkit-box-shadow: 0 0 10px #6500a8, 0 0 40px #6500a8, 0 0 80px #6500a8;
+            box-shadow: 0 0 10px #6500a8, 0 0 40px #6500a8, 0 0 80px #6500a8; }
+
+.link
+{
+    color: #ffffffb2;
+}
+.link:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CSS ANIMATION */
+
+.loader{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	animation-duration: 2s;
+    margin-right: 200px;
+}
+.loader span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 3px solid rgba(255, 255, 255,0.15);
+	border-radius: 100%;
+	background: none;
+	box-shadow: 0px 5px 18px 10px rgb(225, 0, 255);
+	animation: round 5s linear infinite;
+}
+.loader span:nth-child(2){
+	animation-direction: normal;
+	border-radius: 44% 56% 39% 61% / 37% 35% 65% 63% ;
+    box-shadow: 0px 18px 20px 2px rgb(119, 0, 134);
+}
+.loader span:nth-child(3){
+	animation-direction: normal;
+	border-radius: 37% 63% 71% 29% / 44% 39% 61% 56% ;
+	box-shadow: 0px 8px 30px 4px rgb(174, 0, 255);
+}
+.loader span:nth-child(4){
+	animation-direction: normal;
+	border-radius: 68% 32% 46% 54% / 29% 51% 49% 71% ;
+    box-shadow: 0px 8px 45px 5px rgb(59, 0, 87);
+}
+.loader span:nth-child(5){
+	animation-direction: normal;
+	border-radius: 62% 38% 51% 49% / 42% 42% 58% 58% ;
+	box-shadow: 2px 15px 49px 12px rgb(174, 0, 255);
+	
+}
+.loader span:nth-child(6){
+	animation-direction: normal;
+	border-radius: 67% 33% 57% 43% / 45% 61% 39% 55% ;
+	box-shadow: 2px 10px 59px 22px #8400ff;
+	
+}
+.loader span:nth-child(7){
+	animation-direction: normal;
+	border-radius: 67% 33% 66% 34% / 36% 70% 30% 64% ;
+	box-shadow: 2px 6px 69px 2px #8400ff;
+	
+}
+@keyframes round{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
